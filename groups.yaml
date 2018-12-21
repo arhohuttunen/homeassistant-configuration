@@ -1,0 +1,60 @@
+livingroom:
+  name: Olohuone
+  entities:
+    - sensor.living_room_temperature
+    - sensor.living_room_humidity
+    - sensor.living_room_pressure
+    - light.living_room_ceiling_light
+    - light.living_room_left_wall_light
+    - light.living_room_right_wall_light
+    - light.living_room_floor_light
+sauna:
+  name: Sauna
+  entities:
+    - sensor.sauna_temperature
+    - sensor.sauna_humidity
+    - sensor.sauna_pressure
+bathroom:
+  name: Kylpyhuone
+  entities:
+    - sensor.bathroom_temperature
+    - sensor.bathroom_humidity
+    - sensor.bathroom_pressure
+    - light.bathroom_ceiling_light
+    - light.bathroom_left_spot
+    - light.bathroom_middle_spot
+    - light.bathroom_right_spot
+bedroom:
+  name: Makuuhuone
+  entities:
+    - light.bedroom_ceiling_light
+kitchen:
+  name: Keittiö
+  entities:
+    - light.kitchen_sink_light
+    - light.kitchen_table_left_light
+    - light.kitchen_table_middle_light
+    - light.kitchen_table_right_light
+office:
+  name: Työhuone
+  entities:
+    - light.office_light
+weather:
+  name: Sää
+  entities:
+    - sun.sun
+    - sensor.weather_symbol
+    - sensor.weather_temperature
+    - sensor.weather_humidity
+    - sensor.weather_wind_speed
+    - sensor.weather_wind_direction
+iphone:
+  name: iPhone
+  entities:
+    - sensor.iphone_arho_battery_level
+    - sensor.iphone_arho_battery_state
+ipad:
+  name: iPad
+  entities:
+    - sensor.ipad_arho_battery_level
+    - sensor.ipad_arho_battery_state

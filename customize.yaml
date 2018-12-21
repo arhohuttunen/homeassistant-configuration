@@ -1,0 +1,102 @@
+sun.sun:
+  friendly_name: Aurinko
+
+sensor.weather_symbol:
+  friendly_name: Sää
+sensor.weather_temperature:
+  friendly_name: Lämpötila
+sensor.weather_humidity:
+  friendly_name: Kosteus
+  icon: mdi:water-percent
+sensor.weather_wind_speed:
+  friendly_name: Tuulen nopeus
+  icon: mdi:weather-windy
+sensor.weather_wind_direction:
+  friendly_name: Tuulen suunta
+  icon: mdi:compass-outline
+
+sensor.living_room_temperature:
+  friendly_name: Lämpötila
+sensor.living_room_humidity:
+  friendly_name: Kosteus
+  icon: mdi:water-percent
+sensor.living_room_pressure:
+  friendly_name: Ilmapaine
+  icon: mdi:gauge
+sensor.living_room_battery:
+  hidden: true
+
+sensor.sauna_temperature:
+  friendly_name: Lämpötila
+sensor.sauna_humidity:
+  friendly_name: Kosteus
+  icon: mdi:water-percent
+sensor.sauna_pressure:
+  friendly_name: Ilmapaine
+  icon: mdi:gauge
+sensor.sauna_battery:
+  hidden: true
+
+sensor.bathroom_temperature:
+  friendly_name: Lämpötila
+sensor.bathroom_humidity:
+  friendly_name: Kosteus
+  icon: mdi:water-percent
+sensor.bathroom_pressure:
+  friendly_name: Ilmapaine
+  icon: mdi:gauge
+sensor.bathroom_battery:
+  hidden: true
+
+sensor.iphone_arho_battery_level:
+  friendly_name: Akun varaus
+sensor.iphone_arho_battery_state:
+  friendly_name: Akun tila
+
+sensor.ipad_arho_battery_level:
+  friendly_name: Akun varaus
+sensor.ipad_arho_battery_state:
+  friendly_name: Akun tila
+
+light.living_room:
+  hidden: true
+light.living_room_ceiling_light:
+  friendly_name: Kattovalo
+light.living_room_floor_light:
+  friendly_name: Lattiavalo
+light.living_room_left_wall_light:
+  friendly_name: Vasen seinävalo
+light.living_room_right_wall_light:
+  friendly_name: Oikea seinävalo
+
+light.bathroom:
+  hidden: true
+light.bathroom_ceiling_light:
+  friendly_name: Kattovalo
+light.bathroom_left_spot:
+  friendly_name: Spottivalo vasen
+light.bathroom_middle_spot:
+  friendly_name: Spottivalo keski
+light.bathroom_right_spot:
+  friendly_name: Spottivalo oikea
+
+light.kitchen:
+  hidden: true
+light.kitchen_sink_light:
+  friendly_name: Allasvalo
+light.kitchen_table_left_light:
+  friendly_name: Pöytävalo vasen
+light.kitchen_table_middle_light:
+  friendly_name: Pöytävalo keski
+light.kitchen_table_right_light:
+  friendly_name: Pöytävalo oikea
+
+light.bedroom:
+  hidden: true
+light.bedroom_ceiling_light:
+  friendly_name: Kattovalo
+
+light.office:
+  hidden: true
+light.office_light:
+  friendly_name: Kattovalo

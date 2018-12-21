@@ -54,6 +54,20 @@ sun:
 sensor:
   # Weather prediction
   - platform: yr
+    name: Weather
+    monitored_conditions:
+      - temperature
+      - humidity
+      - windSpeed
+      - windDirection
+  - platform: ruuvi
+    beacons:
+      sauna:
+        mac: !secret sauna_ruuvi_mac
+      bathroom:
+        mac: !secret bathroom_ruuvi_mac
+      living_room:
+        mac: !secret living_room_ruuvi_mac
 
 # Text to speech
 tts:
