@@ -4,7 +4,7 @@
     entity_id: sensor.sauna_temperature
     above: '60'
   action:
-    - service: notify.ios
+    - service: notify.ios_iphone_arho
       data:
         message: "Saunan lämpötila on {{ states.sensor.sauna_temperature.state }} \xB0C"
         title: Sauna on lämmin
