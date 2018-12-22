@@ -8,13 +8,16 @@ sensor.weather_temperature:
 sensor.weather_humidity:
   friendly_name: Kosteus
   icon: mdi:water-percent
+sensor.weather_pressure:
+  friendly_name: Ilmanpaine
+  icon: mdi:gauge
 sensor.weather_wind_speed:
   friendly_name: Tuulen nopeus
   icon: mdi:weather-windy
 sensor.weather_wind_direction:
   friendly_name: Tuulen suunta
   icon: mdi:compass-outline
-
+  
 sensor.living_room_temperature:
   friendly_name: Lämpötila
 sensor.living_room_humidity:

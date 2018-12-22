@@ -58,6 +58,7 @@ sensor:
     monitored_conditions:
       - temperature
       - humidity
+      - pressure
       - windSpeed
       - windDirection
   - platform: ruuvi
