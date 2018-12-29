@@ -9,3 +9,9 @@ known_devices.yaml
 __pycache__
 .DS_Store
 ._.DS_Store
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.profile
+.ssh/
