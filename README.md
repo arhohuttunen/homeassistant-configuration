@@ -30,7 +30,7 @@ Please note that I don’t reply to questions about installation and do not prov
 
 ## Installing Rasbian
 
-You will need to download the official [https://www.raspberrypi.org/downloads/raspbian/](https://www.raspberrypi.org/downloads/raspbian/ "Raspbian Stretch Lite") image and flash it to an SD card. Just follow the [https://www.raspberrypi.org/documentation/installation/installing-images/README.md](https://www.raspberrypi.org/documentation/installation/installing-images/README.md "Installing operating system images") instructions.
+You will need to download the official [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/) image and flash it to an SD card. Just follow the [Installing operating system images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) instructions.
 
 Please note that you will need to format your SD card first. If you don’t do this you may end up with some really random errors.
 
@@ -51,11 +51,11 @@ network={
 
 During the Raspberry boot the file will automatically be copied in the right folder and the network connection will be established.
 
-If you run into any trouble check the [https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md "Setting WiFi up via the command line") instructions.
+If you run into any trouble check the [Setting WiFi up via the command line](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) instructions.
 
 ## Installing Home Assistant
 
-Installation on Raspbian is pretty straightforward if you follow the  [https://www.home-assistant.io/docs/installation/raspberry-pi/](https://www.home-assistant.io/docs/installation/raspberry-pi/ "Manual installation on a Raspberry Pi") guide.
+Installation on Raspbian is pretty straightforward if you follow the  [Manual installation on a Raspberry Pi](https://www.home-assistant.io/docs/installation/raspberry-pi/) guide.
 
 I have noticed that sometimes some of steps may fail because of download errors. This can be resolved by executing the command again.
 
@@ -104,7 +104,7 @@ $ sudo systemctl enable home-assistant@homeassistant
 
 ## Backup to Github
 
-The process of backing up to Github is pretty well documented in [https://www.home-assistant.io/docs/ecosystem/backup/backup\_github/](https://www.home-assistant.io/docs/ecosystem/backup/backup_github/ "Configuration Backup to GitHub") instructions.
+The process of backing up to Github is pretty well documented in [Configuration Backup to GitHub](https://www.home-assistant.io/docs/ecosystem/backup/backup_github/) instructions.
 
 It’s quite important that you do not push any sensitive information to Github.
 
