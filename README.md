@@ -8,19 +8,6 @@ Currently the setup has:
 
 There is also a simple custom sensor component for Ruuvi.
 
-The custom component uses the `ruuvitag_sensor` library and needs some superuser rights for `homeassistant` user to work correctly:
-
-```
-$ sudo visudo
-```
-
-Add the following line:
-
-```
-homeassistant   ALL = (ALL) NOPASSWD: /bin/hciconfig, /usr/bin/hcitool, /usr/bin/hciattach, /usr/bin/hcidump, /usr/bin/hcitool, /bin/kill
-```
-
-I am not super happy about this solution and am thinking of creating a more secure implementation.
 
 # Installing Home Assistant on Raspberry Pi Zero W
 
@@ -126,3 +113,19 @@ $ ssh-keygen -t rsa -C "homeassistant@raspberrypi.local"
 Once the keys have been generated you have to login into your Github account, go to your account `Settings`, navigate to `SSH and GPG Keys` and add a new SSH key. 
 
 Paste the contents of file in the `~/.ssh/id_rsa.pub` into your public key and you are all set.
+
+## Setting up Ruuvi sensors
+
+The custom `ruuvi` sensor component uses the `ruuvitag_sensor` library and needs some superuser rights for `homeassistant` user to work correctly:
+
+```
+$ sudo visudo
+```
+
+Add the following line:
+
+```
+homeassistant   ALL = (ALL) NOPASSWD: /bin/hciconfig, /usr/bin/hcitool, /usr/bin/hciattach, /usr/bin/hcidump, /usr/bin/hcitool, /bin/kill
+```
+
+I am not super happy about this solution and am thinking of creating a more secure implementation.
