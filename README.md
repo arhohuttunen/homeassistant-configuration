@@ -55,9 +55,52 @@ If you run into any trouble check the [https://www.raspberrypi.org/documentation
 
 ## Installing Home Assistant
 
-Installation on Raspbian is pretty straight forward if you follow the  [https://www.home-assistant.io/docs/installation/raspberry-pi/](https://www.home-assistant.io/docs/installation/raspberry-pi/ "Manual installation on a Raspberry Pi") guide.
+Installation on Raspbian is pretty straightforward if you follow the  [https://www.home-assistant.io/docs/installation/raspberry-pi/](https://www.home-assistant.io/docs/installation/raspberry-pi/ "Manual installation on a Raspberry Pi") guide.
 
 I have noticed that sometimes some of steps may fail because of download errors. This can be resolved by executing the command again.
+
+### Autostart
+
+To control Home Assistant with `systemd` a service file is needed:
+
+```bash
+$ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
+```
+
+Paste the following as the contents of the file:
+
+```
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Now you need to reload `systemd` to make the daemon aware of the new configuration and then start the service:
+
+```bash
+$ sudo systemctl --system daemon-reload
+$ sudo systemctl start home-assistant@homeassistant
+```
+
+To get the log output of Home Assistan you can now use:
+
+```bash
+$ sudo journalctl -f -u home-assistant@homeassistant
+```
+
+If everything starts up ok, you can make Home Assistant start automatically at boot:
+
+```bash
+$ sudo systemctl enable home-assistant@homeassistant
+```
 
 ## Backup to Github
 
